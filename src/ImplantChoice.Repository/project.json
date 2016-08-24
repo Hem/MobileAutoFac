@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Autofac": "4.0.1",
+    "ImplantChoice.Repository.Contracts": "1.0.0-*",
+    "Microsoft.AspNetCore.Mvc.Core": "1.0.0",
+    "NETStandard.Library": "1.6.0",
+    "SimpleNet.Core.Data": "0.0.2",
+    "SimpleNet.Core.Data.SqlServer": "0.0.2"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": [
+        "dnxcore50",
+        "portable-net45+win8"
+      ]
+    }
+  }
+}

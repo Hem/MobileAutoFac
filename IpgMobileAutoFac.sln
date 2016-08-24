@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E7577EB0-3C40-4F3E-B57E-370A874A74ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AC64D57-D35D-4020-906F-1607EF6387AF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Web", "src\Web\Web.xproj", "{E498A788-72DD-46C8-BD89-795972587752}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplantChoice.Repository.Contracts", "src\ImplantChoice.Repository.Contracts\ImplantChoice.Repository.Contracts.xproj", "{F9F21D54-9568-445C-B458-70B8093AF70B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplantChoice.Repository", "src\ImplantChoice.Repository\ImplantChoice.Repository.xproj", "{678A83D6-F95F-4017-98B9-3F3BB74D71AB}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ImplantChoice.Business", "src\ImplantChoice.Business\ImplantChoice.Business.xproj", "{9A2540EF-EE7B-424D-95D0-F1F6CBCEB5D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E498A788-72DD-46C8-BD89-795972587752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E498A788-72DD-46C8-BD89-795972587752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E498A788-72DD-46C8-BD89-795972587752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E498A788-72DD-46C8-BD89-795972587752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F21D54-9568-445C-B458-70B8093AF70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F21D54-9568-445C-B458-70B8093AF70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F21D54-9568-445C-B458-70B8093AF70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F21D54-9568-445C-B458-70B8093AF70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678A83D6-F95F-4017-98B9-3F3BB74D71AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678A83D6-F95F-4017-98B9-3F3BB74D71AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678A83D6-F95F-4017-98B9-3F3BB74D71AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678A83D6-F95F-4017-98B9-3F3BB74D71AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2540EF-EE7B-424D-95D0-F1F6CBCEB5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2540EF-EE7B-424D-95D0-F1F6CBCEB5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2540EF-EE7B-424D-95D0-F1F6CBCEB5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2540EF-EE7B-424D-95D0-F1F6CBCEB5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E498A788-72DD-46C8-BD89-795972587752} = {E7577EB0-3C40-4F3E-B57E-370A874A74ED}
+		{F9F21D54-9568-445C-B458-70B8093AF70B} = {E7577EB0-3C40-4F3E-B57E-370A874A74ED}
+		{678A83D6-F95F-4017-98B9-3F3BB74D71AB} = {E7577EB0-3C40-4F3E-B57E-370A874A74ED}
+		{9A2540EF-EE7B-424D-95D0-F1F6CBCEB5D7} = {E7577EB0-3C40-4F3E-B57E-370A874A74ED}
+	EndGlobalSection
+EndGlobal
