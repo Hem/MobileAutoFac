@@ -1,4 +1,4 @@
-﻿/// <binding Clean='clean, copy' />
+﻿/// <binding Clean='clean, copy' ProjectOpened='clean, copy' />
 "use strict";
 
 var gulp = require("gulp"),
@@ -84,4 +84,7 @@ gulp.task('copy:angular2inmemorywebapi', function () {
 //        .pipe(gulp.dest("."));
 //});
 
-gulp.task("copy", ["copy:libs", "copy:angular", "copy:rxjs", "copy:angular2inmemorywebapi"]);
+gulp.task("copy", ["copy:libs",
+                    "copy:angular",
+                    "copy:rxjs",
+                    "copy:angular2inmemorywebapi"]);

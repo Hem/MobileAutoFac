@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using ImplantChoice.Business.Contracts;
+using System.Threading.Tasks;
 
 namespace ImplantChoice.Business.SomeRules
 {
@@ -11,9 +12,9 @@ namespace ImplantChoice.Business.SomeRules
         {
             _container = container;
         }
-        public ISomeRule GetRule(string name)
+        public Task<ISomeRule> GetRule(string name)
         {
-            return _container.ResolveNamed<ISomeRule>(name);
+            return Task.FromResult(_container.ResolveNamed<ISomeRule>(name));
         }
     }
 }

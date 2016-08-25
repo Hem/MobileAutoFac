@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using ImplantChoice.Repository.Contracts;
 using ImplantChoice.Repository.Contracts.Dtos;
 using SimpleNet.Core.Data;
@@ -14,27 +15,27 @@ namespace ImplantChoice.Repository
         {
         }
 
-        public Insurance Create(Insurance dto)
+        public Task<Insurance> Create(Insurance dto)
         {
             throw new NotImplementedException();
         }
 
-        public Insurance Delete(Insurance dto)
+        public Task<Insurance> Delete(Insurance dto)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Insurance> GetAll()
+        public Task<IEnumerable<Insurance>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Insurance GetById(int id)
+        public Task<Insurance> GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Insurance Update(Insurance dto)
+        public Task<Insurance> Update(Insurance dto)
         {
             throw new NotImplementedException();
         }

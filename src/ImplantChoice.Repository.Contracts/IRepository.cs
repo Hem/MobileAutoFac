@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ImplantChoice.Repository.Contracts
 {
@@ -8,10 +9,10 @@ namespace ImplantChoice.Repository.Contracts
 
     public interface IRepository<T, Tid> : IRepository
     {
-        T GetById(Tid id);
-        IEnumerable<T> GetAll();
-        T Create(T dto);
-        T Update(T dto);
-        T Delete(T dto);
+        Task<T> GetById(Tid id);
+        Task<IEnumerable<T>> GetAll();
+        Task<T> Create(T dto);
+        Task<T> Update(T dto);
+        Task<T> Delete(T dto);
     }
 }

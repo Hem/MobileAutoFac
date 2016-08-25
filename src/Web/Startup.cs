@@ -34,18 +34,11 @@ namespace Web
             // Add framework services.
             services.AddMvc();
 
-            AutofacContainer = services.AddAutofac(Configuration);
+            // Register application dependencies...
+            // This returns the AutofacContainer object...
+            AutofacContainer = services.RegisterApplicationDependencies(Configuration);
 
-            // TODO: Check values here!
-
-
-            // var repository = AutofacContainer.Resolve<ISimpleDatabaseProvider>("ImplantChoice");
-            // var dal = AutofacContainer.ResolveKeyed<ISimpleDataAccessLayer>("ImplantChoice");
-            // var baseRepo = AutofacContainer.Resolve<ImplantChoiceBaseRepository>();
             
-            var insRepo = AutofacContainer.Resolve<IInsuranceRepository>();
-            
-
             // Create the IServiceProvider based on the container.
             return new AutofacServiceProvider(AutofacContainer);
         }

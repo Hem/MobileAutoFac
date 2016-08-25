@@ -1,9 +1,9 @@
-﻿namespace ImplantChoice.Business.Contracts
+﻿using System.Threading.Tasks;
+
+namespace ImplantChoice.Business.Contracts
 {
-
-
     public interface ISomeRuleFactory
     {
-        ISomeRule GetRule(string name);
+        Task<ISomeRule> GetRule(string name);
     }
 }

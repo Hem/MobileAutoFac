@@ -24,9 +24,7 @@ namespace ImplantChoice.Repository
                                 (pi, c) => c.ResolveNamed<ISimpleDataAccessLayer>("ImplantChoice"))
                 .PropertiesAutowired()
                 .InstancePerLifetimeScope();
-
-
-
+            
 
         }
 

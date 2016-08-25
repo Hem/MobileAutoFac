@@ -11,7 +11,7 @@ namespace Web
 {
     public static class DiRegistrar
     {
-        public static IContainer AddAutofac(this IServiceCollection services, IConfigurationRoot configuration)
+        public static IContainer RegisterApplicationDependencies(this IServiceCollection services, IConfigurationRoot configuration)
         {
             // Create the container builder.
             var builder = new ContainerBuilder();

@@ -243,3 +243,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+
+# Web Project Ignore
+Web/wwwroot/angular2
+Web/wwwroot/lib
