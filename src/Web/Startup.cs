@@ -42,12 +42,9 @@ namespace Web
             // var repository = AutofacContainer.Resolve<ISimpleDatabaseProvider>("ImplantChoice");
             // var dal = AutofacContainer.ResolveKeyed<ISimpleDataAccessLayer>("ImplantChoice");
             // var baseRepo = AutofacContainer.Resolve<ImplantChoiceBaseRepository>();
-
-
+            
             var insRepo = AutofacContainer.Resolve<IInsuranceRepository>();
-
-
-
+            
 
             // Create the IServiceProvider based on the container.
             return new AutofacServiceProvider(AutofacContainer);

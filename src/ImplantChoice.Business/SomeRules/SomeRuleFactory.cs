@@ -5,7 +5,6 @@ namespace ImplantChoice.Business.SomeRules
 {
     public class SomeRuleFactory : ISomeRuleFactory
     {
-
         private readonly ILifetimeScope _container;
 
         public SomeRuleFactory(ILifetimeScope container)

@@ -18,6 +18,11 @@ namespace ImplantChoice.Business
                     .Named<ISomeRule>(RuleB.Name)
                     .PropertiesAutowired().
                     InstancePerLifetimeScope();
+
+            builder.RegisterType<SomeRuleFactory>()
+                .As<ISomeRuleFactory>()
+                .InstancePerLifetimeScope();
+
         }
     }
 }
