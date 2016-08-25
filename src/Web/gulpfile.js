@@ -1,4 +1,4 @@
-﻿/// <binding Clean='clean, copy' ProjectOpened='clean, copy' />
+/// <binding Clean='clean, copy' ProjectOpened='clean, copy' />
 "use strict";
 
 var gulp = require("gulp"),

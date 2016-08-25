@@ -2,17 +2,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { HomeComponent } from './home.component'; 
+import { NavComponent } from './nav.component';
 
 
 @NgModule({
     imports: [BrowserModule],
-    declarations: [HomeComponent],
-    bootstrap: [HomeComponent]
+    declarations: [NavComponent],
+    bootstrap: [NavComponent]
 })
-export class HomeModule { }
+export class NavModule { }
 
 
 // Bootstrap module here!!!
 // This way we can include the module on every page...
-platformBrowserDynamic().bootstrapModule(HomeModule);
+platformBrowserDynamic().bootstrapModule(NavModule);

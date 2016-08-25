@@ -2,6 +2,6 @@
 
 @Component({
     selector: 'ipg-home',
-    template: '<h4> ipg home component </>'
+    template: '<h4> IPG - HomeComponent - View </h4>'
 })
 export class HomeComponent { }

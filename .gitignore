@@ -246,5 +246,7 @@ ModelManifest.xml
 
 
 # Web Project Ignore
-Web/wwwroot/angular2
-Web/wwwroot/lib
+**/wwwroot/angular2/**/*
+**/wwwroot/lib/**/*
+**/app/**/*.js
+**/app/**/*.js.map
