@@ -1,33 +1,15 @@
-﻿import { NgModule, Component } from '@angular/core';
-import { COMMON_DIRECTIVES, COMMON_PIPES } from '@angular/common';
+﻿import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { HomeComponent } from './home/home.component'; 
-import { NavComponent } from './nav/nav.component';
 
 
-@Component({
-    selector: 'ipg-app',
-    
-    template: `
-                <div>
-                    <ipg-home></ipg-home>
-                    <ipg-nav>Nav Content:</ipg-nav>
-                </div>
-            `,
+import { MainAppComponent } from './main.app.component';
+import { NavModule } from './common/nav/nav.module';
 
-    directives: [HomeComponent, NavComponent]
-})
-export class IpgAppComponent { }
 
 @NgModule({
-    imports: [BrowserModule],
-    declarations: [IpgAppComponent],
-    bootstrap: [IpgAppComponent]
+    imports: [BrowserModule, NavModule, CommonModule],
+    declarations: [MainAppComponent],
+    bootstrap: [MainAppComponent]
 })
 export class MainModule { }
-
-// Bootstrap module here!!!
-// This way we can include the module on every page...
-platformBrowserDynamic().bootstrapModule(MainModule);

@@ -11,18 +11,11 @@
 </head>
 <body>
 
-    <ipg-app>
+    <ipg-main-app>@RenderBody()</ipg-main-app>
 
-        <h3>transcluded content</h3>
-
-        @RenderBody()
-
-    </ipg-app>
-
-
-    <h5>what about me</h5>
 
     @Html.Partial("DefineAngular")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
