@@ -11,29 +11,18 @@
 </head>
 <body>
 
-    <div class="navbar-header">
+    <ipg-app>
 
-        <h3>Title</h3>
+        <h3>transcluded content</h3>
 
-        <ipg-nav></ipg-nav>
-    </div>
-
-    <div class="container">
         @RenderBody()
-    </div>
 
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Sample Application</p>
-    </footer>
+    </ipg-app>
 
 
+    <h5>what about me</h5>
 
     @Html.Partial("DefineAngular")
-    <script>
-        System.import('app/navigation/nav.module');
-    </script>
     @RenderSection("scripts", required: false)
-    
-
 </body>
 </html>

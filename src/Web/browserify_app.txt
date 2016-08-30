@@ -1,0 +1,1 @@
+ browserify -s main wwwroot/app/navigation/nav.module.js > wwwroot/lib/angular_nav.js
