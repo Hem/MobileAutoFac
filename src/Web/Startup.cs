@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using ImplantChoice.Repository.Contracts;
+
 
 namespace Web
 {
@@ -52,7 +52,10 @@ namespace Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
+
+                // To enable browser link add to project.json
+                // "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
+                // app.UseBrowserLink();
             }
             else
             {

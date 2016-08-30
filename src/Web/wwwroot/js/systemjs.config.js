@@ -11,7 +11,7 @@
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'app': { main:'navigation/nav.module.js', defaultExtension: 'js' },
-        'rxjs': { defaultExtension: 'js' },
+        'rxjs': { main:'bundles/Rx.js', defaultExtension: 'js' },
         'angular2-in-memory-web-api': { defaultExtension: 'js' },
     };
 
