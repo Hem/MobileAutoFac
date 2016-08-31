@@ -29,7 +29,7 @@
     ];
 
     ngPackageNames.forEach(function (pkgName) {
-        packages['@angular/' + pkgName] = { main: 'bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
+        packages['@angular/' + pkgName] = { main: 'bundles/' + pkgName + '.umd.min.js', defaultExtension: 'js' };
     });
 
     var config = {

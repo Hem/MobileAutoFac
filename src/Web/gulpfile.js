@@ -54,7 +54,8 @@ gulp.task('copy:libs', function () {
 
 gulp.task('copy:angular', function () {
     return gulp.src([
-        'node_modules/@angular/**/*.js',
+        'node_modules/@angular/**/bundles/*.umd.js',
+        'node_modules/@angular/**/bundles/*.umd.min.js',
     ]).pipe(gulp.dest('wwwroot/angular2/@angular'))
 });
 
